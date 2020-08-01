@@ -12,7 +12,12 @@ class App extends React.Component {
         <div className="content">
           <div className="container">
             <div className="content__top">
-              <Category items={['Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые']} />
+              <Category
+                items={['Все', 'Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые']}
+                onClick={(name) => {
+                  console.log(name);
+                }}
+              />
               <div className="sort">
                 <div className="sort__label">
                   <svg
