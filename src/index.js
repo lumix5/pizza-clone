@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/Header.jsx';
+import { Header, Category } from './components/';
+
 import './scss/app.scss';
 
 class App extends React.Component {
@@ -11,16 +12,7 @@ class App extends React.Component {
         <div className="content">
           <div className="container">
             <div className="content__top">
-              <div className="categories">
-                <ul>
-                  <li className="active">Все</li>
-                  <li>Мясные</li>
-                  <li>Вегетарианская</li>
-                  <li>Гриль</li>
-                  <li>Острые</li>
-                  <li>Закрытые</li>
-                </ul>
-              </div>
+              <Category items={['Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые']} />
               <div className="sort">
                 <div className="sort__label">
                   <svg
