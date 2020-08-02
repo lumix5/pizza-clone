@@ -2,11 +2,14 @@ import React from 'react';
 
 function Category(props) {
   let { items } = props;
-  const [activeItem, changeItemOnClick] = React.useState(0);
+  const [activeItem, changeItemOnClick] = React.useState(null);
 
   return (
     <div className="categories">
       <ul>
+        <li className={activeItem === null ? 'active' : ''} onClick={() => changeItemOnClick(null)}>
+          Все
+        </li>
         {items.map((name, index) => (
           <li
             className={activeItem === index ? 'active' : ''}
