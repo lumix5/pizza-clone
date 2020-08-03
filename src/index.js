@@ -18,7 +18,7 @@ class App extends React.Component {
                   console.log(name);
                 }}
               />
-              <SortPopup />
+              <SortPopup items={['Популярности', 'Цене', 'Алфавиту']} />
             </div>
             <h2 className="content__title">Все пиццы</h2>
             <div className="content__items">
