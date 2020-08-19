@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
 function PizzaBlock({ name, price, imageUrl, items, types, sizes }) {
-  const [tallOrTraditional, setTallOrTraditional] = React.useState(types[0]);
-  const [avaibleSizes, setAvaibleSizes] = React.useState(0);
+  const [tallOrTraditional, setTallOrTraditional] = useState(0);
+  const [avaibleSizes, setAvaibleSizes] = useState(0);
   return (
     <div>
       <div className="pizza-block">

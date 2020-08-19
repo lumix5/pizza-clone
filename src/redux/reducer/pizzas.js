@@ -7,7 +7,7 @@ const pizzasReducer = (state = initialState, action) => {
   if (action.type === 'SET_PIZZAS') {
     return {
       ...state,
-      sortBy: action.paylod,
+      items: action.payload,
     };
   }
   return state;
